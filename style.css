@@ -1,0 +1,857 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;600;700&display=swap');
+
+*,::after,::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Karla', sans-serif;
+}
+
+html{
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+
+/* Utility Classes */
+
+.text-center{
+    text-align: center;
+}
+
+.container{
+    max-width: 1140px;
+    margin: auto;
+}
+
+.bg-purple{
+    background-color: #00216f;
+}
+
+.text-purple{
+    color: #00216f;
+}
+
+.text-white{
+    color: white;
+}
+
+.text-yellow{
+    color: #feb336;
+}
+
+.bg-yellow{
+    background-color: #feb336;
+}
+
+.btn{
+    padding: 1.3rem 3rem;
+    border: none;
+}
+
+.img-fluid{
+    max-width: 100%;
+    height: auto;
+}
+
+.d-inline{
+    display: inline;
+}
+
+.d-block{
+    display: block;
+}
+
+.d-inline-block{
+    display: inline-block;
+}
+
+.d-flex{
+    display: flex;
+}
+
+.justify-content-center{
+    justify-content: center;
+}
+
+.justify-content-between{
+    justify-content: space-between;
+}
+
+.align-items-center{
+    align-items: center;
+}
+
+.m-auto{
+    margin: auto;
+}
+
+/* Top Strip */
+
+.top-strip{
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 0;
+    
+}
+
+.contact-details{
+    display: flex;
+    align-items: center;
+    gap: 5rem;
+}
+
+.number h2{
+    font-weight: 700;
+    font-size: 3.2rem;
+}
+
+.number p{
+    font-size: 1.8rem;
+    color: #131313;
+    font-weight: 400;
+}
+
+.quote-btn{
+    font-size: 1.6rem;
+    color: #00216f;
+    font-weight: 700;
+    border: 3px solid #feb336;
+    transition: background-color ease-in-out .2s;
+}
+
+.quote-btn:hover{
+    background-color: transparent;
+    color: #feb336;
+    cursor: pointer;
+}
+
+.header{
+    padding: 2rem 0;
+
+}
+
+.nav-list{
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    font-size: 1.8rem;
+}
+
+
+.nav-list a{
+    color: white;
+    text-decoration: none;
+    transition: color .2s ease-in-out;
+}
+
+.nav-list a:hover{
+    color: #feb336;
+}
+
+.subscribe{
+    font-size: 4.2rem;
+    font-weight: 700;
+}
+
+.sign-up-btn{
+    padding: 1rem 2.5rem;
+    background-color: #131313;
+    border: none;
+    font-weight: 700;
+}
+
+/* Footer */
+
+.subscribe{
+    flex: 1 1 50%
+}
+
+.footer-section-1{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.input-feild{
+    padding: 1rem;
+    outline: none;
+    background: black;
+    color: white;
+    border: 2px solid white;
+    width: 80%;
+}
+
+.sign-up{
+    position: relative;
+    flex: 1 1 50%;
+}
+
+.input-feild::placeholder{
+    color: #757474;
+    font-size: 1.6rem;
+    font-weight: 400;
+}
+
+.sign-up-btn{
+    position: absolute;
+    right:3%;
+    border: 2px solid white;
+    cursor: pointer;
+}
+
+footer{
+    background-image: url('./images/footer-background.png');
+    background-position: center;
+}
+
+.footer-section-1{
+    padding: 5rem 0;
+}
+
+hr{
+    height:1px;
+    border-width:0;
+    background-color:white
+}
+
+.service-list a{
+    text-decoration: none;
+    color: white;
+    font-size: 1.7rem;
+    font-weight: 400;
+}
+
+.service-list li:not(:last-child) {
+    padding-bottom: 2rem;
+}
+
+.service-list li:first-child{
+    padding-top: 2rem;
+}
+
+.footer-section-2{
+    padding: 8rem 0;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.intro-text{
+    font-size: 1.4rem;
+    line-height: 26px;
+    font-weight: 400;
+}
+
+.service-text{
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.contact-text{
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+.contact-paragraph{
+    font-size: 1.4rem;
+    font-weight: 400;
+    margin-bottom: 1rem;
+}
+
+.location, .phone-number, .mail{
+    padding-bottom: 3rem;
+    font-size: 1.7rem;
+    font-weight: 400;
+}
+
+.copyright-paragraph{
+    font-weight: 400;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: #a0a0a0;
+    padding: 3rem;
+    text-align: right;
+    font-size: 1.4rem;
+}
+
+/* Banner */
+
+.free-quote-btn{
+    font-size: 1.6rem;
+    color: #00216f;
+    font-weight: 700;
+    margin-right: 2rem;
+    border: 3px solid #feb336;
+    transition: background-color .2s ease-in-out;
+}
+
+.free-quote-btn:hover{
+    background-color: transparent;
+    color: #feb336;
+    cursor: pointer;
+}
+
+.benefit-btn{
+    border: 3px solid #feb336;
+    background-color: transparent;
+    padding:1.3rem 6rem;
+    font-size: 1.6rem;
+    color: #feb336;
+    font-weight: 700;
+    transition: background-color ease-in-out .2s;
+}
+
+.benefit-btn:hover{
+    background-color: #feb336;
+    color: #00216f;
+    cursor: pointer;
+}
+
+.banner-h1{
+    text-shadow: 2px 2px 4px #000;
+    font-size: 3.5rem;
+    color: #fff;
+    font-weight: 700;
+    font-family: 'Playfair Display', sans-serif;
+    margin-bottom: 3rem;
+}
+
+.banner{
+    background-image: url('./images/banner.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.banner .container{
+    padding: 10rem 0;
+}
+
+/* Features */
+
+.roofcoating{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.features{
+    background-color: #171717;
+}
+
+.feature-text{
+    font-weight: 400;
+    font-family: 'Oswald', sans-serif;
+    font-size: 1.4rem;
+    letter-spacing: 1px;
+    margin-top: 1.5rem;
+}
+
+.features .container{
+    display: flex;
+    justify-content: center;
+    gap: 5rem;
+    align-items: flex-end;
+    padding: 4rem;
+    flex-wrap: wrap;
+}
+
+/* About */
+
+.about{
+    padding: 10rem 0;
+}
+
+.about-text{
+    font-size: 1.8rem;
+    letter-spacing: 3px;
+    font-weight: 400;
+    font-family: 'Oswald', sans-serif;
+}
+
+.about-btn{
+    font-size: 1.6rem;
+    font-weight: 700;
+    border: 3px solid #00216f;
+    transition: background-color .2s ease-in-out;
+}
+
+.about-btn:hover{
+    background-color: transparent;
+    color: #00216f;
+    cursor: pointer;
+}
+
+.about-h1{
+    font-size: 4.2rem;
+    font-weight: 700;
+    font-family: 'Playfair Display', sans-serif;    
+    margin-bottom: 2rem;
+}
+
+.about-paragraph{
+    font-size: 1.8rem;
+    line-height: 28px;
+    color: #131313;
+    font-weight: 400;
+    margin-bottom: 1rem;
+}
+
+/* Why Choose US */
+
+.chooseus-container{
+    background-color: #f7f7f7;
+    padding: 10rem 0;
+}
+
+.chooseus-container h1{
+    font-size: 4.2rem;
+    font-weight: 700;
+    font-family: 'Playfair Display', sans-serif;
+    text-align: center;
+    margin-bottom: 5rem;
+}
+
+.chooseus-headings{
+    font-weight: 700;
+    font-size: 2rem;
+}
+
+.chooseus-paragraphs{
+    font-size: 2rem;
+    line-height: 26px;
+    color: #131313;
+    font-weight: 400;
+}
+
+.chooseus{
+    display: flex;
+    justify-content: space-between;
+    gap: 5rem;
+    padding: 0 5rem ;
+    margin-bottom: 2rem;
+}
+
+.left-1,.right-1{
+    margin-bottom: 4rem;
+}
+
+.chooseus-section1,.chooseus-section2{
+    flex: 1 1 50%;
+}
+
+.more-btn{
+    font-size: 1.6rem;
+    font-weight: 700;
+    border: 3px solid #00216f;
+    transition: background-color .2s ease-in-out;
+    margin-left: 5rem;
+}
+
+.more-btn:hover{
+    background-color: transparent;
+    color: #00216f;
+    cursor: pointer;
+}
+
+/* Work */
+
+.work-heading-container{
+    width: 50%;
+    padding-right: 2rem;
+}
+
+.work-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.work-heading{
+    font-size: 1.8rem;
+    letter-spacing: 4px;
+    font-weight: 400;
+    font-family: 'Oswald', sans-serif;
+    margin-bottom: 1rem;
+}
+
+.work-paragraph{
+    font-size: 2.3rem;
+    padding-bottom: 2rem;
+    
+}
+
+.first-line{
+    font-size: 4.3rem;
+}
+
+.work{
+    padding: 7rem 0;
+    background-image: url('./images/workbackground.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.work-container{
+    position: relative;
+}
+
+.link{
+    font-size: 2.5rem;
+}
+
+.img-slider img{
+    box-shadow: 0px 0px 20px 1px black;
+}
+
+.work1{
+    position: relative;
+    left: -9%;
+}
+.work3{
+    position: relative;
+    right: -9%;
+}
+
+.img-slider{
+    margin-top: 8rem;
+}
+
+/* Floating Card */
+
+.floating-card{
+    padding: 5rem;
+    width: 58%;
+    /* position: absolute; */
+    right: -9%;
+    top: -65%;
+}
+
+.floating-paragraph{
+    font-size: 3.2rem;
+    color: #353535;
+    font-weight: 700;
+    margin-bottom: 2rem;
+}
+
+.floating-card .text-purple{
+    font-weight: 700;
+}
+
+.get-btn{
+    border: 3px solid #00216f;
+    border-radius: 50px;
+    font-size: 2rem;
+    font-weight: 700;
+    transition: background-color .2s ease-in-out;
+}
+
+.get-btn:hover{
+    background-color: transparent;
+    color: #00216f;
+    cursor: pointer ;
+}
+
+.work-number{
+    font-size: 6.1rem;
+    font-weight: 700;
+    margin-bottom: 4rem;
+}
+
+/* review */
+
+.review-paragraph{
+    padding: 0 3rem;
+}
+
+.review{
+    background-color: #f7f7f7;
+    padding: 10rem 0;
+}
+
+.review-heading{
+    text-align: center;
+    font-size: 4.2rem;
+    font-weight: 700;
+    font-family: 'Playfair Display', sans-serif;
+    margin-bottom: 2rem;
+}
+
+.review-paragraph{
+    font-size: 1.8rem;
+    font-weight: 400;
+    font-style: italic;
+    text-align: center;
+    margin: 3rem 0;
+}
+
+.reviewer{
+    font-size: 1.8rem;
+    letter-spacing: 3px;
+    font-weight: 400;
+    text-align: center;
+    font-family: 'Oswald', sans-serif;
+}
+
+/* Media Queries For Responsiveness */
+
+@media (max-width:1200px){
+    .container{
+        max-width: 960px;
+    }
+
+    .nav-list{
+        display: none;
+    }
+}
+
+@media (max-width:992px){
+    .container{
+        max-width: 720px;
+    }
+
+
+    .work-number{
+        font-size: 3rem;
+    }
+
+    .about{
+        padding: 4rem 0;
+    }
+
+    .about-h1{
+        font-size: 2.5rem;
+    }
+
+    .about-paragraph{
+        font-size: 1.4rem;
+    }
+
+    .copyright-paragraph{
+        padding: 1.5rem;
+        text-align: center;
+        font-size: 1.1rem;
+    }
+
+    .review{
+        padding: 4rem 0;
+    }
+
+    .chooseus-container{
+        padding: 4rem 0;
+    }
+
+    .chooseus-container h1{
+        font-size: 3rem;
+    }
+
+    .chooseus-headings, .chooseus-paragraphs{
+        font-size: 1.4rem;
+    }
+
+    .chooseus{
+        flex-direction: column;
+    }
+}
+@media (max-width:768px){
+
+
+    .review-heading{
+        font-size: 3rem;
+    }
+
+    .reviewer{
+        font-size: 1.2rem;
+    }
+
+    .left-arrow img, .right-arrow img{
+        width: 20px;
+    }
+
+    .location, .phone-number, .mail{
+        font-size: 1.2rem;
+    }
+
+    .service-list a{
+        font-size: 1.2rem;
+    }
+
+    .contact-paragraph{
+        font-size: 1.1rem;
+    }
+
+    .intro, .services{
+        margin-bottom: 3rem;
+    }
+
+    .footer-section-2{
+        padding: 3rem 0;
+    }
+    
+    .footer-section-1{
+        flex-direction: column;
+    }
+
+    .sign-up{
+        width: 100%;
+    }
+
+    .heading-btn-wrapper{
+        flex-direction: column;
+    }
+    .container{
+        max-width: 540px;
+    }
+
+    .about-h1{
+        align-self: flex-start;
+    }
+
+    .about-text{
+        font-size: 1.4rem;
+    }
+
+    .about-btn{
+        font-size: 1.2rem;
+        padding: 1rem 2rem;
+        width: 100%;
+    }
+    
+    .heading-btn-wrapper{
+        margin-bottom: 2rem;
+    }
+
+    .work-number{
+        font-size: 1.8rem;
+    }
+
+    .floating-card{
+        padding: 2.5rem;
+    }
+
+    .contact-details{
+        gap: 0;
+    }
+
+    .quote-btn{
+        display: none;
+    }
+
+    .banner-h1{
+        font-size: 2.5rem;
+    }
+
+    .floating-paragraph{
+        font-size: 2rem;
+    }
+
+    .banner .container{
+        padding: 5rem 0;
+    }
+
+    .feature-text{
+        font-size: 1.2rem;
+    }
+
+    .subscribe{
+        margin-bottom: 2rem;
+        font-size: 3rem;
+    }
+
+    .sign-up-btn{
+        padding: .8rem 2rem;
+    }
+
+    .input-feild{
+        padding: .8rem;
+    }
+
+    .service-list li:not(:last-child){
+        padding-bottom: 1rem;
+    }
+
+    .location, .phone-number, .mail{
+        padding-bottom: 1rem;
+    }
+
+    .review-paragraph{
+        font-size: 1.2rem;
+    }
+
+    .work-container{
+        flex-direction: column;
+    }
+
+    .work-heading-container{
+        width: 100%;
+        margin-bottom: 5rem;
+    }
+
+    .floating-card{
+        width: 100%;
+    }
+
+}
+
+@media (max-width:576px){
+
+    .work1,.work3{
+        position: static;
+    }
+
+    .work1, .work2{
+        margin-bottom: 4rem;
+    }
+
+    .img-slider{
+        flex-direction: column;
+    }
+
+    .more-btn{
+        margin-left: 0;
+        width: 100%;
+    }
+    .chooseus{
+        padding: 0 2rem;
+    }
+
+    .footer-section-1{
+        padding: 3rem 0;
+    }
+
+    .free-quote-btn, .benefit-btn{
+        font-size: 1.2rem;
+    }
+
+    .container{
+        max-width: 90%;
+    }
+
+    .logo-container img{
+        width: 120px;
+    }
+
+    .banner-buttons{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .free-quote-btn{
+        margin-right: 0;
+        margin-bottom: 1.5rem;
+
+    }
+
+    .number h2{
+        font-size: 2rem;
+    }
+
+    .number p{
+        font-size: 1.4rem;
+    }
+
+}
